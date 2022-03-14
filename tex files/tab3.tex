@@ -1,0 +1,58 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+            &\multicolumn{1}{c}{wage}&\multicolumn{1}{c}{wage}\\
+\hline
+experience  &       0.312\sym{***}&       0.338\sym{***}\\
+            &     (18.06)         &     (19.27)         \\
+[1em]
+union       &       2.259\sym{***}&       1.953\sym{***}\\
+            &      (5.90)         &      (5.12)         \\
+[1em]
+manager     &       8.860\sym{***}&       8.673\sym{***}\\
+            &     (18.07)         &     (18.16)         \\
+[1em]
+big\_firm    &       5.799\sym{***}&       5.734\sym{***}\\
+            &     (10.13)         &     (10.39)         \\
+[1em]
+1.educ\_level&      -14.21\sym{***}&      -14.62\sym{***}\\
+            &    (-19.25)         &    (-22.83)         \\
+[1em]
+2.educ\_level&      -12.23\sym{***}&      -12.94\sym{***}\\
+            &    (-16.60)         &    (-20.72)         \\
+[1em]
+3.educ\_level&      -8.201\sym{***}&      -8.483\sym{***}\\
+            &    (-13.94)         &    (-16.89)         \\
+[1em]
+4.educ\_level&           0         &           0         \\
+            &         (.)         &         (.)         \\
+[1em]
+5.educ\_level&       5.619\sym{***}&       5.163\sym{***}\\
+            &      (4.98)         &      (5.65)         \\
+[1em]
+1.region    &      -3.809\sym{***}&      -3.803\sym{***}\\
+            &     (-8.42)         &     (-7.22)         \\
+[1em]
+2.region    &      -3.387\sym{***}&      -3.435\sym{***}\\
+            &     (-8.70)         &     (-7.86)         \\
+[1em]
+3.region    &           0         &           0         \\
+            &         (.)         &         (.)         \\
+[1em]
+4.region    &       2.403\sym{***}&       2.604\sym{***}\\
+            &      (4.83)         &      (4.46)         \\
+[1em]
+5.region    &       0.381         &     -0.0831         \\
+            &      (0.56)         &     (-0.10)         \\
+[1em]
+\_cons      &       26.91\sym{***}&       26.89\sym{***}\\
+            &     (41.27)         &     (43.18)         \\
+\hline
+\(N\)       &       11406         &       11406         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

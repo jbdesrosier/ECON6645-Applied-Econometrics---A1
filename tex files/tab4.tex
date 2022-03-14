@@ -1,0 +1,94 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}\\
+            &\multicolumn{1}{c}{wage}\\
+\hline
+educ\_yrs    &       2.075\sym{***}\\
+            &     (21.57)         \\
+[1em]
+0.female    &           0         \\
+            &         (.)         \\
+[1em]
+1.female    &      -3.413         \\
+            &     (-1.55)         \\
+[1em]
+0.female#c.educ\_yrs&           0         \\
+            &         (.)         \\
+[1em]
+1.female#c.educ\_yrs&     0.00997         \\
+            &      (0.07)         \\
+[1em]
+experience  &       0.340\sym{***}\\
+            &     (14.43)         \\
+[1em]
+0.female#c.experience&           0         \\
+            &         (.)         \\
+[1em]
+1.female#c.experience&      -0.117\sym{***}\\
+            &     (-3.42)         \\
+[1em]
+0.union     &           0         \\
+            &         (.)         \\
+[1em]
+1.union     &       0.898         \\
+            &      (1.62)         \\
+[1em]
+0.union#0.female&           0         \\
+            &         (.)         \\
+[1em]
+0.union#1.female&           0         \\
+            &         (.)         \\
+[1em]
+1.union#0.female&           0         \\
+            &         (.)         \\
+[1em]
+1.union#1.female&       2.427\sym{**} \\
+            &      (3.11)         \\
+[1em]
+0.manager   &           0         \\
+            &         (.)         \\
+[1em]
+1.manager   &       11.54\sym{***}\\
+            &     (19.24)         \\
+[1em]
+0.manager#0.female&           0         \\
+            &         (.)         \\
+[1em]
+0.manager#1.female&           0         \\
+            &         (.)         \\
+[1em]
+1.manager#0.female&           0         \\
+            &         (.)         \\
+[1em]
+1.manager#1.female&      -5.126\sym{***}\\
+            &     (-5.83)         \\
+[1em]
+0.big\_firm  &           0         \\
+            &         (.)         \\
+[1em]
+1.big\_firm  &       7.012\sym{***}\\
+            &      (9.71)         \\
+[1em]
+0.big\_firm#0.female&           0         \\
+            &         (.)         \\
+[1em]
+0.big\_firm#1.female&           0         \\
+            &         (.)         \\
+[1em]
+1.big\_firm#0.female&           0         \\
+            &         (.)         \\
+[1em]
+1.big\_firm#1.female&      -2.814\sym{**} \\
+            &     (-2.78)         \\
+[1em]
+\_cons      &      -7.150\sym{***}\\
+            &     (-4.68)         \\
+\hline
+\(N\)       &       11509         \\
+\hline\hline
+\multicolumn{2}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

@@ -1,0 +1,37 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{health}&\multicolumn{1}{c}{health}&\multicolumn{1}{c}{health}\\
+\hline
+ln\_income   &      0.0690\sym{***}&      0.0693\sym{***}&      0.0732\sym{***}\\
+            &     (39.56)         &     (39.66)         &     (41.04)         \\
+[1em]
+educ\_yrs    &     0.00440\sym{***}&     0.00443\sym{***}&     0.00398\sym{***}\\
+            &     (12.73)         &     (12.81)         &     (11.34)         \\
+[1em]
+age         &    -0.00184\sym{***}&    -0.00423\sym{***}&    -0.00460\sym{***}\\
+            &    (-18.60)         &     (-4.68)         &     (-5.03)         \\
+[1em]
+c.age#c.age &                     &   0.0000264\sym{**} &   0.0000316\sym{**} \\
+            &                     &      (2.67)         &      (3.17)         \\
+[1em]
+imm         &                     &                     &      0.0580\sym{***}\\
+            &                     &                     &      (6.61)         \\
+[1em]
+ysm         &                     &                     &   -0.000914\sym{**} \\
+            &                     &                     &     (-2.60)         \\
+[1em]
+imm\_ysm123  &                     &                     &     0.00730         \\
+            &                     &                     &      (0.46)         \\
+[1em]
+\_cons      &       0.111\sym{***}&       0.158\sym{***}&       0.121\sym{***}\\
+            &      (5.67)         &      (6.00)         &      (4.53)         \\
+\hline
+\(N\)       &       30371         &       30371         &       29444         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
